@@ -45,13 +45,13 @@ footer {
     width: 100%;
 }
 
-/* New: Profile picture styling */
+
 .profile-pic {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #fff;
