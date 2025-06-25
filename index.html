@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Shahil Karki - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="Shahil_Karki_Resume.pdf" class="btn" download>Download Resume</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
         <img src="profile.jpg" alt="Shahil Karki" class="profile-pic" />
         <h1>Shahil Karki</h1>
         <h2>Data Engineer</h2>
@@ -15,58 +28,54 @@
         <p>Email: <a href="mailto:shahil.karki@students.mq.edu.au">shahil.karki@students.mq.edu.au</a></p>
         <p>Phone: 042-471-8577</p>
         <p><a href="https://www.linkedin.com/in/shahil-karki-8660592b9" target="_blank">LinkedIn Profile</a></p>
-        <a href="Shahil_Karki_Resume.pdf" class="btn" download>Download Resume (PDF)</a>
     </header>
 
     <main>
-        <section>
+        <section id="skills" data-aos="fade-up">
             <h3>Skills</h3>
             <table class="skills-table">
                 <tr><th>Category</th><th>Technologies & Tools</th></tr>
-                <tr><td>Programming & Data Analysis</td><td>Python (NumPy, Pandas, Scikit-learn, PySpark), R, SQL, Bash, Jupyter Notebooks</td></tr>
-                <tr><td>Machine Learning & AI</td><td>Supervised & Unsupervised Learning, Model Tuning, TensorFlow, Keras, NLP, Time Series</td></tr>
-                <tr><td>Big Data & Cloud Platforms</td><td>Apache Spark, Hadoop, AWS, Azure, GCP</td></tr>
-                <tr><td>Data Engineering & ETL</td><td>Airflow, Kafka, Spark Streaming, ETL Pipelines, Data Modeling</td></tr>
-                <tr><td>Databases</td><td>MySQL, PostgreSQL, MongoDB, Snowflake</td></tr>
-                <tr><td>Visualization</td><td>Power BI, Tableau, Matplotlib, Seaborn, Plotly</td></tr>
-                <tr><td>DevOps & Version Control</td><td>Docker, Git, CI/CD, MLflow</td></tr>
-                <tr><td>Tools & Platforms</td><td>Jupyter, VS Code, Linux, Anaconda, Postman</td></tr>
+                <tr><td>Programming & Data Analysis</td><td>Python, R, SQL, Bash, Jupyter</td></tr>
+                <tr><td>Machine Learning & AI</td><td>TensorFlow, Keras, Scikit-learn, NLP</td></tr>
+                <tr><td>Big Data & Cloud</td><td>Spark, Hadoop, AWS, Azure, GCP</td></tr>
+                <tr><td>ETL & Data Eng.</td><td>Airflow, Kafka, ETL Pipelines</td></tr>
+                <tr><td>Databases</td><td>PostgreSQL, MySQL, Snowflake</td></tr>
+                <tr><td>Visualization</td><td>Power BI, Tableau, Seaborn</td></tr>
+                <tr><td>DevOps & Tools</td><td>Docker, Git, Linux, Postman</td></tr>
             </table>
         </section>
 
-        <section>
+        <section id="experience" data-aos="fade-up">
             <h3>Experience</h3>
 
-            <h4>HURDEC Pvt. Ltd, Kathmandu, Nepal</h4>
-            <p><strong>Associate Data Analyst</strong> | Feb 2021 – Apr 2023</p>
+            <h4>HURDEC Pvt. Ltd</h4>
+            <p><strong>Associate Data Analyst</strong> | 2021 – 2023</p>
             <ul>
-                <li>Cleaned and validated datasets for research and policy reports.</li>
-                <li>Developed dashboards and statistical summaries for development projects.</li>
-                <li>Used Python, SPSS, and Excel to manage and analyze survey data.</li>
+                <li>Validated and analyzed survey data for development research.</li>
+                <li>Created dashboards and data summaries for reports.</li>
             </ul>
 
-            <h4>Rooster Logic, Kathmandu, Nepal</h4>
-            <p><strong>Data Science Intern</strong> | Jul 2020 – Dec 2020</p>
+            <h4>Rooster Logic</h4>
+            <p><strong>Data Science Intern</strong> | 2020</p>
             <ul>
-                <li>Developed a solar/lunar event visualization tool using Python (Astral).</li>
-                <li>Worked on backend logic and form validation for data collection tools.</li>
+                <li>Built Python tool for astronomical event tracking.</li>
+                <li>Supported backend for mobile research platform.</li>
             </ul>
 
-            <h4>Deerwalk Institute of Technology</h4>
-            <p><strong>Final Year Project – Music Genre Detection</strong> | Jul 2019 – Dec 2019</p>
+            <h4>Final Year Project</h4>
+            <p><strong>Music Genre Classification</strong></p>
             <ul>
-                <li>Built an SVM classifier using MFCC & FFT features in Python.</li>
-                <li>Visualized results and tuned model performance using F1-score.</li>
+                <li>Built SVM model with MFCC and FFT audio features.</li>
             </ul>
         </section>
 
-        <section>
+        <section id="education" data-aos="fade-up">
             <h3>Education</h3>
-            <p><strong>Macquarie University, Sydney</strong><br/>Masters in Data Science (2024 – running)</p>
-            <p><strong>Deerwalk Institute of Technology, TU</strong><br/>BSc CSIT, 2020</p>
+            <p><strong>Macquarie University</strong><br/>Masters in Data Science, 2024 – running</p>
+            <p><strong>Deerwalk Institute of Technology</strong><br/>BSc CSIT, 2020</p>
         </section>
 
-        <section>
+        <section id="contact" data-aos="fade-up">
             <h3>Contact Me</h3>
             <form action="mailto:shahil.karki@students.mq.edu.au" method="post" enctype="text/plain">
                 <input type="text" name="name" placeholder="Your Name" required />
@@ -80,5 +89,10 @@
     <footer>
         <p>&copy; 2025 Shahil Karki</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
