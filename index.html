@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shahil Karki - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-
     <nav class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -23,11 +23,15 @@
     <header id="home">
         <img src="profile.jpg" alt="Shahil Karki" class="profile-pic" />
         <h1>Shahil Karki</h1>
-        <h2>Data Engineer</h2>
+        <h2>Data Science Student</h2>
         <p>Location: Sydney, Australia</p>
         <p>Email: <a href="mailto:shahil.karki@students.mq.edu.au">shahil.karki@students.mq.edu.au</a></p>
         <p>Phone: 042-471-8577</p>
-        <p><a href="https://www.linkedin.com/in/shahil-karki-8660592b9" target="_blank">LinkedIn Profile</a></p>
+        <p>
+            <a href="https://www.linkedin.com/in/shahil-karki-8660592b9" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/ShahilKarki12" target="_blank">GitHub</a>
+        </p>
+        <p>Aspiring data scientist with a keen eye for detail and a strong interest in solving real-world problems using data.</p>
     </header>
 
     <main>
@@ -43,6 +47,23 @@
                 <tr><td>Visualization</td><td>Power BI, Tableau, Seaborn</td></tr>
                 <tr><td>DevOps & Tools</td><td>Docker, Git, Linux, Postman</td></tr>
             </table>
+        </section>
+
+        <section id="projects" data-aos="fade-up">
+            <h3>Projects</h3>
+
+            <h4>Personal Spending & Budget Tracker</h4>
+            <ul>
+                <li>Extracted and cleaned transactional data from PDF bank statements using Python.</li>
+                <li>Built interactive data visualizations with Seaborn and Plotly for budget insights.</li>
+                <li><a href="https://github.com/ShahilKarki12/spending-tracker" target="_blank">View on GitHub</a></li>
+            </ul>
+
+            <h4>Music Genre Classification</h4>
+            <ul>
+                <li>Used MFCC and FFT for audio feature extraction and SVM for classification.</li>
+                <li>Achieved strong accuracy in genre prediction using Python and Flask.</li>
+            </ul>
         </section>
 
         <section id="experience" data-aos="fade-up">
@@ -61,38 +82,8 @@
                 <li>Built Python tool for astronomical event tracking.</li>
                 <li>Supported backend for mobile research platform.</li>
             </ul>
-
-            <h4>Final Year Project</h4>
-            <p><strong>Music Genre Classification</strong></p>
-            <ul>
-                <li>Built SVM model with MFCC and FFT audio features.</li>
-            </ul>
         </section>
 
         <section id="education" data-aos="fade-up">
             <h3>Education</h3>
-            <p><strong>Macquarie University</strong><br/>Masters in Data Science, 2024 – running</p>
-            <p><strong>Deerwalk Institute of Technology</strong><br/>BSc CSIT, 2020</p>
-        </section>
-
-        <section id="contact" data-aos="fade-up">
-            <h3>Contact Me</h3>
-            <form action="mailto:shahil.karki@students.mq.edu.au" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required />
-                <input type="email" name="email" placeholder="Your Email" required />
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Shahil Karki</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
-</html>
+            <p><strong>Macquarie University</strong><br/
