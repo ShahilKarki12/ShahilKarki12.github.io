@@ -1,113 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shahil Karki - Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shahil Karki — Data Scientist & AI Researcher</title>
+  <meta name="description" content="Shahil Karki is a Sydney-based data scientist and Master's researcher studying the application of AI in algorithmic trading — from predictive accuracy to profitability.">
+
+  <!-- Social sharing (Open Graph) -->
+  <meta property="og:title" content="Shahil Karki — Data Scientist & AI Researcher">
+  <meta property="og:description" content="Research on AI in algorithmic trading, plus end-to-end data projects in sentiment analysis, SQL, and visualization.">
+  <meta property="og:url" content="https://shahilkarki12.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://shahilkarki12.github.io/profile.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M2 26 L9 17 L14 21 L21 9 L26 13 L30 4' fill='none' stroke='%230E7A5F' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="Shahil_Karki_Resume.pdf" class="btn" download>Download Resume</a></li>
-        </ul>
+
+  <header class="site-head">
+    <a class="wordmark" href="#top">Shahil Karki</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#insights">Insights</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </header>
 
-    <header id="home">
-        <img src="profile.jpg" alt="Shahil Karki" class="profile-pic" />
-        <h1>Shahil Karki</h1>
-        <h2>Data Science Student</h2>
-        <p>Location: Sydney, Australia</p>
-        <p>Email: <a href="mailto:shahil.karki@students.mq.edu.au">shahil.karki@students.mq.edu.au</a></p>
-        <p>Phone: 042-471-8577</p>
-        <p>
-            <a href="https://www.linkedin.com/in/shahil-karki-8660592b9" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/ShahilKarki12" target="_blank">GitHub</a>
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <p class="hero-role">Data Scientist &amp; AI Researcher · Sydney, Australia</p>
+      <h1>I study whether AI that predicts markets well can actually trade them profitably.</h1>
+      <p class="hero-intro">
+        I'm Shahil — a data scientist with a Master of Data Science from Macquarie University,
+        three years of analytics experience, and a current Master of Business Research thesis
+        on AI in algorithmic trading. I build end-to-end data work: from messy source data to
+        models, dashboards, and decisions.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#research">Read my research</a>
+        <a class="btn btn-quiet" href="Shahil_Karki_Resume.pdf">Download résumé (PDF)</a>
+      </div>
+
+      <!-- The equity curve — drawn once on page load -->
+      <div class="curve" aria-hidden="true">
+        <svg viewBox="0 0 1200 160" preserveAspectRatio="none">
+          <path class="curve-line"
+            d="M0,128 L60,122 L110,131 L170,112 L230,118 L290,96 L350,104 L410,84 L470,92 L530,68 L600,80 L660,56 L720,64 L790,44 L850,52 L910,34 L980,42 L1050,22 L1120,30 L1200,12" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section id="research" class="section">
+      <h2>Research</h2>
+      <article class="paper">
+        <p class="paper-status">Master of Business Research thesis — in progress, 2026 · Excelsia University College, Sydney</p>
+        <h3 class="paper-title">Application of AI in Algorithmic Trading: From Predictive Accuracy to Profitability and Market Outcomes</h3>
+        <p class="paper-abstract">
+          Machine learning models routinely report strong accuracy on stock price prediction — yet
+          accuracy alone doesn't pay. This research compares baseline statistical models against
+          LSTM, GRU, and sentiment-hybrid deep learning architectures on US large-cap and S&amp;P 500
+          data (2014–2024), asking a harder question: after transaction costs and realistic execution,
+          which predictive gains survive as actual trading profitability, and what does that mean for
+          market outcomes?
         </p>
-        <p>Aspiring data scientist with a keen eye for detail and a strong interest in solving real-world problems using data.</p>
-    </header>
+        <ul class="paper-facts">
+          <li><span>Models</span> Baseline · LSTM · GRU · sentiment-hybrid</li>
+          <li><span>Data</span> Yahoo Finance — US large-caps &amp; S&amp;P 500, 2014–2024</li>
+          <li><span>Current stage</span> Systematic literature review — 50+ papers screened, documented, and synthesised</li>
+        </ul>
+      </article>
+    </section>
 
-    <main>
-        <section id="skills" data-aos="fade-up">
-            <h3>Skills</h3>
-            <table class="skills-table">
-                <tr><th>Category</th><th>Technologies & Tools</th></tr>
-                <tr><td>Programming & Data Analysis</td><td>Python, R, SQL, Bash, Jupyter</td></tr>
-                <tr><td>Machine Learning & AI</td><td>TensorFlow, Keras, Scikit-learn, NLP</td></tr>
-                <tr><td>Big Data & Cloud</td><td>Spark, Hadoop, AWS, Azure, GCP</td></tr>
-                <tr><td>ETL & Data Eng.</td><td>Airflow, Kafka, ETL Pipelines</td></tr>
-                <tr><td>Databases</td><td>PostgreSQL, MySQL, Snowflake</td></tr>
-                <tr><td>Visualization</td><td>Power BI, Tableau, Seaborn</td></tr>
-                <tr><td>DevOps & Tools</td><td>Docker, Git, Linux, Postman</td></tr>
-            </table>
-        </section>
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <h2>Selected projects</h2>
 
-        <section id="projects" data-aos="fade-up">
-            <h3>Projects</h3>
+      <article class="project">
+        <div class="project-head">
+          <h3>Competitor sentiment analysis — Sydney fine dining</h3>
+          <p class="project-tags">Python · VADER NLP · Power BI</p>
+        </div>
+        <p><strong>Problem.</strong> A Vaucluse restaurant wanted to know how diners perceive it against five Eastern Suburbs competitors — beyond star ratings.</p>
+        <p><strong>Approach.</strong> Collected Google Maps reviews across all six venues, scored them with VADER sentiment analysis, and broke results down by theme (food, service, ambience, value).</p>
+        <p><strong>Outcome.</strong> Interactive Power BI dashboards and a findings report highlighting where the venue leads, where it lags, and which competitor strengths to watch.</p>
+        <!-- TODO: export a dashboard screenshot as images/sentiment-dashboard.png, then uncomment:
+        <figure>
+          <img src="images/sentiment-dashboard.png" alt="Power BI dashboard comparing diner sentiment across six Sydney venues" loading="lazy">
+          <figcaption>Sentiment by theme across six venues.</figcaption>
+        </figure>
+        -->
+      </article>
 
-            <h4>Personal Spending & Budget Tracker</h4>
-            <ul>
-                <li>Extracted and cleaned transactional data from PDF bank statements using Python.</li>
-                <li>Built interactive data visualizations with Seaborn and Plotly for budget insights.</li>
-                <li><a href="https://github.com/ShahilKarki12/spending-tracker" target="_blank">View on GitHub</a></li>
-            </ul>
+      <article class="project">
+        <div class="project-head">
+          <h3>ShopWise — e-commerce analytics database</h3>
+          <p class="project-tags">SQL · SQLite · schema design</p>
+        </div>
+        <p><strong>Problem.</strong> Demonstrate production-style SQL skills on a realistic retail dataset rather than toy examples.</p>
+        <p><strong>Approach.</strong> Designed and built a normalised SQLite database for an e-commerce business — customers, orders, products, payments — with queries spanning joins, aggregation, window functions, and reporting views.</p>
+        <p><strong>Outcome.</strong> A self-contained SQL portfolio covering schema design through to business-question queries.</p>
+      </article>
 
-            <h4>Music Genre Classification</h4>
-            <ul>
-                <li>Used MFCC and FFT for audio feature extraction and SVM for classification.</li>
-                <li>Achieved strong accuracy in genre prediction using Python and Flask.</li>
-            </ul>
-        </section>
+      <article class="project">
+        <div class="project-head">
+          <h3>Personal spending &amp; budget tracker</h3>
+          <p class="project-tags">Python · Seaborn · Plotly</p>
+        </div>
+        <p><strong>Problem.</strong> Bank statements arrive as PDFs — useless for analysis.</p>
+        <p><strong>Approach.</strong> Extracted and cleaned transactional data from PDF statements with Python, then built interactive visualisations of spending patterns and budget position.</p>
+        <p><strong>Outcome.</strong> A repeatable pipeline from raw statement to budget insight. <a href="https://github.com/ShahilKarki12/spending-tracker">View on GitHub</a></p>
+      </article>
 
-        <section id="experience" data-aos="fade-up">
-            <h3>Experience</h3>
+      <article class="project">
+        <div class="project-head">
+          <h3>Music genre classification</h3>
+          <p class="project-tags">Python · SVM · Flask</p>
+        </div>
+        <p><strong>Problem.</strong> Can classical ML classify a song's genre from the audio signal alone?</p>
+        <p><strong>Approach.</strong> Extracted MFCC and FFT audio features and trained an SVM classifier, served through a small Flask app.</p>
+        <p><strong>Outcome.</strong> Strong genre-prediction accuracy from signal features — no metadata required.</p>
+      </article>
+    </section>
 
-            <h4>HURDEC Pvt. Ltd</h4>
-            <p><strong>Associate Data Analyst</strong> | 2021 – 2023</p>
-            <ul>
-                <li>Validated and analyzed survey data for development research.</li>
-                <li>Created dashboards and data summaries for reports.</li>
-            </ul>
+    <!-- ============ INSIGHTS ============ -->
+    <section id="insights" class="section">
+      <h2>Insights</h2>
+      <p class="section-lede">Short notes from my research and project work.</p>
 
-            <h4>Rooster Logic</h4>
-            <p><strong>Data Science Intern</strong> | 2020</p>
-            <ul>
-                <li>Built Python tool for astronomical event tracking.</li>
-                <li>Supported backend for mobile research platform.</li>
-            </ul>
-        </section>
+      <details class="post">
+        <summary>
+          <h3>Why prediction accuracy doesn't equal trading profit</h3>
+          <p class="post-date">September 2026</p>
+        </summary>
+        <div class="post-body">
+          <p>A model that predicts tomorrow's price direction with 60% accuracy sounds like a money machine. In practice, it often isn't — and the gap between accuracy and profitability is the central question of my thesis.</p>
+          <p>Three things eat the edge. First, transaction costs: a strategy that trades often pays spreads and fees on every signal, and small per-trade edges disappear fast. Second, asymmetry: being right on many small moves and wrong on a few large ones can leave you accurate and unprofitable at the same time. Third, timing: a correct prediction that executes late is a different trade from the one the backtest assumed.</p>
+          <p>This is why my research evaluates LSTM, GRU, and sentiment-hybrid models not just on error metrics, but on what remains after realistic costs. The interesting result isn't which model predicts best — it's which predictive gains survive contact with the market.</p>
+        </div>
+      </details>
 
-        <section id="education" data-aos="fade-up">
-            <h3>Education</h3>
-            <p><strong>Macquarie University</strong><br/>Master's in Data Science (Expected Nov 2024)</p>
-            <p><strong>Deerwalk Institute of Technology</strong><br/>BSc CSIT, 2020</p>
-        </section>
+      <details class="post">
+        <summary>
+          <h3>What screening 50+ papers taught me about AI in trading</h3>
+          <p class="post-date">August 2026</p>
+        </summary>
+        <div class="post-body">
+          <p>For my literature review I filtered the field down to 50–60 papers and documented each one — abstract, method, data, and key claims. Patterns emerge quickly when you read at that volume.</p>
+          <p>Most papers stop at predictive metrics: RMSE, directional accuracy, sometimes a Sharpe ratio from a frictionless backtest. Far fewer model transaction costs, and fewer still ask what happens to markets when these strategies deploy at scale. Deep learning models — LSTMs especially — dominate recent work, but comparisons against simple baselines are often thin, which flatters the complex models.</p>
+          <p>The gap in the literature is exactly where accuracy meets economics, and that's the space my thesis works in. If you're starting a similar review: log your search strings, keep a synthesis matrix from day one, and read the methodology sections first.</p>
+        </div>
+      </details>
+    </section>
 
-        <section id="contact" data-aos="fade-up">
-            <h3>Contact Me</h3>
-            <form action="mailto:shahil.karki@students.mq.edu.au" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required />
-                <input type="email" name="email" placeholder="Your Email" required />
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article class="role">
+          <p class="role-when">2021 – 2023</p>
+          <div>
+            <h3>Associate Data Analyst — HURDEC Pvt. Ltd</h3>
+            <p>Validated and analysed survey data for development research; built dashboards and data summaries feeding published reports.</p>
+          </div>
+        </article>
+        <article class="role">
+          <p class="role-when">2020</p>
+          <div>
+            <h3>Data Science Intern — Rooster Logic</h3>
+            <p>Built a Python tool for astronomical event tracking and supported the backend of a mobile research platform.</p>
+          </div>
+        </article>
+      </div>
 
-    <footer>
-        <p>&copy; 2025 Shahil Karki</p>
-    </footer>
+      <h2 class="edu-head">Education</h2>
+      <div class="timeline">
+        <article class="role">
+          <p class="role-when">2025 – present</p>
+          <div>
+            <h3>Master of Business Research — Excelsia University College, Sydney</h3>
+            <p>Thesis: AI in algorithmic trading. Coursework in research methodology and leadership completed.</p>
+          </div>
+        </article>
+        <article class="role">
+          <p class="role-when">2024</p>
+          <div>
+            <h3>Master of Data Science — Macquarie University, Sydney</h3>
+          </div>
+        </article>
+        <article class="role">
+          <p class="role-when">2020</p>
+          <div>
+            <h3>BSc Computer Science &amp; IT — Deerwalk Institute of Technology</h3>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <h2>Toolkit</h2>
+      <dl class="skills">
+        <div><dt>Programming &amp; analysis</dt><dd>Python, R, SQL, Bash, Jupyter</dd></div>
+        <div><dt>Machine learning &amp; AI</dt><dd>TensorFlow, Keras, Scikit-learn, NLP</dd></div>
+        <div><dt>Big data &amp; cloud</dt><dd>Spark, Hadoop, AWS, Azure, GCP</dd></div>
+        <div><dt>Data engineering</dt><dd>Airflow, Kafka, ETL pipelines</dd></div>
+        <div><dt>Databases</dt><dd>PostgreSQL, MySQL, Snowflake, SQLite</dd></div>
+        <div><dt>Visualisation</dt><dd>Power BI, Tableau, Seaborn, Plotly</dd></div>
+        <div><dt>DevOps &amp; tools</dt><dd>Docker, Git, Linux, Postman</dd></div>
+      </dl>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section contact">
+      <h2>Get in touch</h2>
+      <p>
+        Open to data science, analytics, and research-adjacent roles in Sydney or remote.
+        The fastest way to reach me is email.
+      </p>
+      <!-- Replace with your personal email before publishing — student addresses can deactivate after graduation. -->
+      <a class="btn btn-solid" href="mailto:shahil.karki@students.mq.edu.au">Email me</a>
+      <p class="contact-links">
+        <a href="https://www.linkedin.com/in/shahil-karki-8660592b9">LinkedIn</a>
+        <a href="https://github.com/ShahilKarki12">GitHub</a>
+      </p>
+      <!--
+        Optional working contact form: create a free form at https://formspree.io,
+        then paste this in place of the button above and swap YOUR_FORM_ID.
+
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+          <label>Your email <input type="email" name="email" required></label>
+          <label>Message <textarea name="message" rows="5" required></textarea></label>
+          <button class="btn btn-solid" type="submit">Send message</button>
+        </form>
+      -->
+    </section>
+
+  </main>
+
+  <footer class="site-foot">
+    <p>© 2026 Shahil Karki · Built by hand with HTML &amp; CSS</p>
+  </footer>
+
 </body>
 </html>
